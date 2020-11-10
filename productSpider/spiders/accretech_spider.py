@@ -37,7 +37,11 @@ class AccretechSpiderSpider(CrawlSpider):
         for file_uri in file_uris:
             file_uri = file_uri.extract()
             pdf_item = PdfDownloadItem()
-            pdf_item['file_name'] = file_uri
-            pdf_item['file_url'] = response.urljoin(file_uri)
+            if file_uri.startswith('http'): 
+                pdf_item['file_name'] = file_uri.split('/')[-1]
+                pdf_item['file_url'] = file_uri 
+            else:
+                pdf_item['file_name'] = file_uri 
+                pdf_item['file_url'] = response.urljoin(file_uri) 
             pdf_item['sub_cate'] = title
             yield pdf_item
