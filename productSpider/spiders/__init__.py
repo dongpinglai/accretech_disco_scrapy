@@ -2,3 +2,5 @@
 #
 # Please refer to the documentation for information on how to create and manage
 # your spiders.
+from accretech_spider import AccretechSpiderSpider
+from disco_spider import DiscoSpiderSpider
