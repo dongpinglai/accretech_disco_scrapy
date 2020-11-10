@@ -15,4 +15,3 @@ https://wkhtmltopdf.org/downloads.html
 >>1.Windows字体目录为C:\Windows\Fonts\，将需要的字体文件拷贝到Linux中/usr/share/font并解压(可以预先在此目录新建chinese文件夹
 
 >>2.$ fc-cache -fv
-accretech_disco_scrapy.git
