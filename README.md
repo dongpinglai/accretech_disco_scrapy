@@ -1,9 +1,16 @@
 ## README
 * ### 项目说明：
+---
 > 基于python, scrapy框架的爬虫，爬取accretech和DISCO的产品信息。各项产品信息将生成pdf文件
 * ### 使用说明：
-> 略
+---
+```
+git clone https://github.com/dongpinglai/accretech_disco_scrapy.git
+cd productSpider && python -m productSpider
+```
+> 
 * ### 注意事项：
+---
 1. pdfkit 需要下载安装依赖wkhtmltopdf(https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf)，下载地址如下:
 https://wkhtmltopdf.org/downloads.html
 
